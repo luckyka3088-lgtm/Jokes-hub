@@ -10,12 +10,12 @@ async function askGemini(Text) {
       })
     });
 
-    const data = await response.json();
+    
     
     if (!response.ok) {
       throw new Error(data.error || "Request failed");
     }
-
+    const data = await response.json();
     return data.text;
 
   } catch (error) {
