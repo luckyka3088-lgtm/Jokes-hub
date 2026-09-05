@@ -11,7 +11,7 @@ async function askGemini(Text) {
     });
 
     const data = await response.json();
-    return data;
+    
     if (!response.ok) {
       throw new Error(data.error || "Request failed");
     }
