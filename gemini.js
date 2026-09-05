@@ -1,6 +1,6 @@
 async function askGemini(Text) {
   try {
-    const response = await fetch("jokes-hub-ten.vercel.app/api/gemini", {
+    const response = await fetch("jokes-hub-ten.vercel.app/api/gemini.js", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
