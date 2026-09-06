@@ -154,12 +154,17 @@ h6{
   font-size:2vh;
   
 }
-
-#spin{
-  
-  
-}
-
-@media (orientation: landscape) {
-  
-}
+@media only screen and (max-width: 500px) {
+  body {
+  #spin {
+    font-size: 70px;
+  }
+    #next,#copy{
+      width:18vh;
+    }
+    .l,.C{
+      width:13vh;
+      font-size:2vh;
+    }
+  }
+  }
